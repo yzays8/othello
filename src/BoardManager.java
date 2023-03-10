@@ -58,11 +58,10 @@ public class BoardManager {
   void flipPiece(char piece, int x, int y) {
     if (piece == 'W') {
       board[y][x] = 'W';
-      window.boardPanel.placePiece();
     } else {
       board[y][x] = 'B';
-      window.boardPanel.placePiece();
     }
+    window.boardPanel.placePiece();
   }
 
   boolean isAbleToPlacePiece(Player player, int x, int y) {

@@ -24,8 +24,8 @@ public class Othello {
 
   void decideWinner() {
     int blackNumber = 0, whiteNumber = 0;
-    for (int y = 0; y < 8; ++y) {
-      for (int x = 0; x < 8; ++x) {
+    for (int y = 0; y < 8; y++) {
+      for (int x = 0; x < 8; x++) {
         if (boardManager.board[y][x] == 'B') {
           ++blackNumber;
         } else {
